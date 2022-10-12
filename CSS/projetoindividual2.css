@@ -1,0 +1,85 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image:url(https://img.olhardigital.com.br/wp-content/uploads/2021/08/criptografia.png);
+    background-size: cover;
+}
+
+h1{
+    color: white;
+}
+
+header{
+    text-align: center;
+}
+
+#formulario{
+    height: 500px;
+    width: 500px;
+    background-color:aqua;
+    display:flex;
+    flex-direction: column;
+    margin-top:50px;
+    border-radius: 30px;
+    
+}
+
+#colocarMensagem {
+    width: 350px;
+    height: 100px;
+    background-color:whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 80px;
+    margin-left: 60px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+#option{
+    height: 50px;
+    width: fit-content;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px ;
+    position: relative;
+    left: 140px;
+}
+
+#colocarNumero{
+    width: 150px;
+    margin-right: 150px;
+    margin-left: 160px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+#submit{
+    display: none;
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 150px;
+    
+}
+
+#saida{
+    text-align: center;
+}
+
+.radiobutton{
+    
+    position: relative;
+    left: 180px;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+    

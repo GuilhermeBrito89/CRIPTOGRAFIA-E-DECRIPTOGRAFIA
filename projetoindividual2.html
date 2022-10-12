@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto individual 2</title>
+    <link rel="stylesheet" href="./CSS/projetoindividual2.css">
+</head>
+<body>
+    <header>
+        <h1>CODIFICAÇÃO E DECODIFICAÇÃO</h1>
+    </header>
+
+    <form>
+    
+        <div >
+    
+            <div id="formulario">
+                
+                <label for = "colocarmensagem"></label>
+                <input type="text" placeholder="Digite aqui" id="colocarMensagem">
+
+                <select id="option">
+                    <option value="Escolha Aqui">Clique aqui para escolher!</option>
+                    <option value="cifraDeCesar">Cifra de Cesar</option>
+                    <option value="base64">Base 64</option>
+                </select>
+
+                <input type= "number" placeholder="Digite seu número Aqui" min="1" max="25" id="colocarNumero">
+
+                <div class="radiobutton" >
+                    
+                    <input type="radio" id="codificar" name= "radio-Cesar" value= "radioCod" checked >
+                    <label for="codificar" id="labelcod"> Codificar </label> <br>
+                
+                    <br>
+            
+                    <input type= "radio" id="decodificar" name= "radio-Cesar" value="radioDecod" checked>
+                    <label for= "decodificar" id= "labeldeco" > Decodificar </label> <br>
+
+                </div>
+
+                <div id="saida">
+                    <p class="saidaMensagem"></p>
+                </div>
+                
+                <input type="submit" value="CODIFICAR" id="submit">
+                <input type="submit" value="DESCODIFICAR" id="submit">
+            
+            </div>
+               
+
+
+    
+        </div>
+    
+    
+    </form>
+
+    <script src="./JS/projetoindividual2.js"></script>
+</body>
+</html>
