@@ -1,14 +1,14 @@
-var colocarMensagem = document.getElementById('colocarMensagem');
-var option = document.querySelector('#option');
-var colocarNumero = document.getElementById('colocarNumero');
-var buttonCodificador = document.getElementById('codificar');
-var buttonDecodificador = document.getElementById('decodificar');
-var alfabeto = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
-var submit = document.querySelector('#submit');
-var saidaMensagem = document.querySelector('.saidaMensagem')
-var radioCod = document.querySelector('#radioCod');
-var radioDecod = document.getElementById('radioDecod')
-var radioButton = document.querySelector('.radiobutton');
+let colocarMensagem = document.getElementById('colocarMensagem');
+let option = document.querySelector('#option');
+let colocarNumero = document.getElementById('colocarNumero');
+let buttonCodificador = document.getElementById('codificar');
+let buttonDecodificador = document.getElementById('decodificar');
+let alfabeto = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
+let submit = document.querySelector('#submit');
+let saidaMensagem = document.querySelector('.saidaMensagem')
+let radioCod = document.querySelector('#radioCod');
+let radioDecod = document.getElementById('radioDecod')
+let radioButton = document.querySelector('.radiobutton');
 
 
 option.addEventListener("change", function () {
@@ -44,13 +44,13 @@ buttonDecodificador.addEventListener("click", function () {
   // Caesar cipher
 
 function codCesar() {
-  var elementoDaMensagem = colocarMensagem.value;
-  var mensagemMinuscula = elementoDaMensagem.toLowerCase();
-  var transformarNumero = (Number(colocarNumero.value) % 26);
-  var mensagemCodificada = '';
+  let elementoDaMensagem = colocarMensagem.value;
+  let mensagemMinuscula = elementoDaMensagem.toLowerCase();
+  let transformarNumero = (Number(colocarNumero.value) % 26);
+  let mensagemCodificada = '';
 
-  for (var i = 0; i < mensagemMinuscula.length; i++) {
-    for (var j = 0; j < alfabeto.length; j++) {
+  for (let i = 0; i < mensagemMinuscula.length; i++) {
+    for (let j = 0; j < alfabeto.length; j++) {
       if (mensagemMinuscula[i] == alfabeto[j]) {
         mensagemCodificada += alfabeto[j + transformarNumero]
         break;
@@ -67,13 +67,13 @@ function codCesar() {
 
 
 function decCesar() {
-  var elementoDaMensagem = colocarMensagem.value;
-  var mensagemMinuscula = elementoDaMensagem.toLowerCase()
-  var transformarNumero = (Number(colocarNumero.value) % 26)
-  var mensagemCodificada = '';
+  let elementoDaMensagem = colocarMensagem.value;
+  let mensagemMinuscula = elementoDaMensagem.toLowerCase()
+  let transformarNumero = (Number(colocarNumero.value) % 26)
+  let mensagemCodificada = '';
 
-  for (var i = 0; i < mensagemMinuscula.length; i++) {
-    for (var j = alfabeto.length - 1; j >= 0; j--) {
+  for (let i = 0; i < mensagemMinuscula.length; i++) {
+    for (let j = alfabeto.length - 1; j >= 0; j--) {
       if (mensagemMinuscula[i] == alfabeto[j]) {
         mensagemCodificada += alfabeto[j - transformarNumero]
         break;
